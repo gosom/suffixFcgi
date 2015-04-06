@@ -28,10 +28,6 @@ std::vector<std::string> split(const std::string &s, char delim) {
 
 int main()
 {
-    //CeDarTrie trie;
-//    auto t0 = high_resolution_clock::now();
-//    trie.load("/home/giorgos/projects/suffixSearch/small.txt");
-//    auto t1 = high_resolution_clock::now();
     char *query_string;
     int count = 0;
     CeDarTrie trie;
@@ -60,37 +56,6 @@ int main()
                    "%s\n",
                    styledWriter.write(ret).c_str());
             }
-            //std::cout << query_string << "\n";
         }
-
-
-//    while(FCGI_Accept() >= 0){
-////        query_string = getenv("QUERY_STRING");
-////        if(query_string == NULL) {
-//////            std::cout << "Content-type: application/json\r\n";
-//////            std::cout << "\r\n";
-//////            std::cout << "Please give the GET parameter prefix!\n";
-////        } else {
-////            query_string = strchr(query_string, '=') + 1;
-//////            std::cout << "Content-type: application/json\r\n";
-//////            std::cout << "\r\n";
-//////            std::cout << query_string << "\n";
-////        }
-//        std::cout << "Content-type: application/json\r\n";
-//        std::cout << "\r\n";
-////        auto res = trie.lookup("/deut");
-////        Json::Value ret;
-////        Json::Value array;
-////        for(auto&r: res){
-////            Json::Value o;
-////            o["kw"] = r.key;
-////            o["id"] = r.value;
-////            array.append(o);
-////        }
-////        ret["results"] = array;
-////        std::cout << "Content-type: application/json\r\n";
-////        std::cout << "\r\n";
-////        Json::StyledWriter styledWriter;
-////        std::cout << styledWriter.write(ret);
     return 0;
 }
